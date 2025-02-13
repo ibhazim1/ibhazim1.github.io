@@ -11,10 +11,15 @@
         function checkBirthday(event) {
             event.preventDefault(); // Prevent form from refreshing the page
 
-            let birthdayInput = document.getElementById("birthday").value;
+            let year = document.getElementById("year").value;
+            let month = document.getElementById("month").value.padStart(2, '0'); // Ensure two digits
+            let day = document.getElementById("day").value.padStart(2, '0'); // Ensure two digits
             let errorMessage = document.getElementById("errmes");
 
-            if (birthdayInput === "2004-07-19") {
+            let enteredDate = `${year}-${month}-${day}`;
+            let correctDate = "2004-07-19";
+
+            if (enteredDate === correctDate) {
                 window.location.href = "page3.html"; // Redirect if correct
             } else {
                 errorMessage.textContent = "Wow! I didn't expect you got this wrong.";
@@ -28,7 +33,9 @@
         <p>Prove it! When is my birthday?</p>
         <form onsubmit="checkBirthday(event)">
             <p>
-                <input type="date" name="birthday" class="birthday" id="birthday">
+                <input class="birthday" type="number" id="year" placeholder="YYYY" min="1900" max="2100" required>
+                <input class="birthday" type="number" id="month" placeholder="MM" min="1" max="12" required>
+                <input class="birthday" type="number" id="day" placeholder="DD" min="1" max="31" required>
                 <br>
                 <span id="errmes" style="color: red;"></span>
             </p>
