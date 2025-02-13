@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine</title>
+    <meta name="author" content="Muhammad Hazim">
+    <link rel="icon" href="Images/flower.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        function checkBirthday(event) {
+            event.preventDefault(); // Prevent form from refreshing the page
+
+            let birthdayInput = document.getElementById("birthday").value;
+            let errorMessage = document.getElementById("errmes");
+
+            if (birthdayInput === "2004-07-19") {
+                window.location.href = "page3.html"; // Redirect if correct
+            } else {
+                errorMessage.textContent = "Wow! I didn't expect you got this wrong.";
+            }
+        }
+    </script>
+</head>
+<body>
+    <article class="page2">
+        <img src="Images/bunnyask.gif" alt="bunny">
+        <p>Prove it! When is my birthday?</p>
+        <form onsubmit="checkBirthday(event)">
+            <p>
+                <input type="date" name="birthday" class="birthday" id="birthday">
+                <br>
+                <span id="errmes" style="color: red;"></span>
+            </p>
+            <p>
+                <input type="submit" value="Next" class="enter" id="enter">
+            </p>
+        </form>
+    </article>
+</body>
+</html>
