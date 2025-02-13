@@ -55,19 +55,23 @@ body article.page2 p{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
-body article.page2 form p input.birthday{
+body article.page2 form p input.birthday {
     height: 25px;
-    width: 170px;
+    width: 55px; /* Adjust width for day and month */
     text-align: center;
-    padding-bottom: 0px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     background-color: #EBA6B0;
     outline: none;
     border: none;
     border-bottom: 2px solid black;
-    margin-bottom: none;
+    margin-bottom: 5px; /* Ensure spacing */
 }
+
+body article.page2 form p input#year {
+    width: 80px; /* Wider for year input */
+}
+
 body article.page2 form p input.enter{
 	background-color: #00c04b;
 	border: 3px solid black;
