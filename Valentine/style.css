@@ -7,7 +7,7 @@ body article.page1{
     padding-top: 50px;
 }
 body article.page1 img{
-    height: 250px;
+    width: 250px;
 }
 body article.page1 p{
     font-family: Arial, Helvetica, sans-serif;
@@ -110,4 +110,65 @@ body article.page3 div a.next{
     font-size: 20px;
     display: block;
     margin: auto;
+}
+body article.page4{
+    width:100%;
+    text-align: center;
+    padding-top: 50px;
+}
+body article.page4 img{
+    height: 400px;
+}
+body article.page4 div.wish{
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+    background-color: #F9E6CF;
+}
+body article.page4 div.wish div.wish2{
+    width: 95%;
+    border: 3px solid #FAC67A;
+    margin: auto;
+    text-align: justify;
+    padding: 10px 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body article.page5{
+    width:100%;
+    text-align: center;
+    padding-top: 150px;
+}
+body article.page5 div.content{
+    width: 60%;
+    margin: auto;
+    height: 300px;
+    padding: 10px;
+}
+body article.page5 div.content img{
+    height: 300px;
+    float: left;
+    margin-right: 30px;
+    box-shadow: 10px 10px lightblue;
+}
+body article.page5 div.content div.text{
+    font-family: monospace;
+    font-size: 18px;
+    text-align: left;
+    padding: 20px;
+    margin-top: 30px;
+    display: block;
+}
+body article.page5 div a.next{
+    text-decoration: none;
+    color:black;
+    background-color: #00c04b;
+    width:80px;
+    padding: 5px;
+    border: 3px solid black;
+    border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
 }
