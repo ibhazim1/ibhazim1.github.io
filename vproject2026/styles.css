@@ -57,6 +57,15 @@ body {
     color: var(--dark-color);
     margin-bottom: 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    line-height: 1.2;
+}
+
+.hero-name {
+    display: block;
+    font-size: 1.2em;
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-top: 0.5rem;
 }
 
 .hero p {
@@ -366,7 +375,11 @@ body {
     }
 
     .hero h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
+    }
+
+    .hero-name {
+        font-size: 1.3em;
     }
 
     .hero p {
@@ -475,7 +488,12 @@ body {
 /* Small Mobile View */
 @media (max-width: 480px) {
     .hero h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
+    }
+
+    .hero-name {
+        font-size: 1.2em;
+        margin-top: 0.8rem;
     }
 
     .hero p {
@@ -505,17 +523,34 @@ body {
     }
 
     .hearts-animation {
-        opacity: 0.15;
+        opacity: 0.2;
+        pointer-events: none;
     }
 
     .heart {
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
+        animation: float 6s infinite ease-in-out;
     }
 
     .heart::before,
     .heart::after {
-        width: 30px;
-        height: 50px;
+        width: 25px;
+        height: 40px;
+    }
+
+    .heart:nth-child(1) {
+        top: 10%;
+        left: 5%;
+    }
+
+    .heart:nth-child(2) {
+        top: 50%;
+        right: 8%;
+    }
+
+    .heart:nth-child(3) {
+        top: 70%;
+        left: 10%;
     }
 }
