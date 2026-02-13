@@ -63,7 +63,7 @@ body {
 .hero-name {
     display: block;
     font-size: 1.2em;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-weight: bold;
     margin-top: 0.5rem;
 }
